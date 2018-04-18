@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ED2E046120873A5800F129C4 /* ScreepsHistoryView.h in Headers */ = {isa = PBXBuildFile; fileRef = ED2E046020873A5800F129C4 /* ScreepsHistoryView.h */; };
-		ED2E046320873A5800F129C4 /* ScreepsHistoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2E046220873A5800F129C4 /* ScreepsHistoryView.m */; };
+		ED2E046B2087470400F129C4 /* ScreepsHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2E046A2087470400F129C4 /* ScreepsHistoryView.swift */; };
+		ED2E046E208748DF00F129C4 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2E046D208748DF00F129C4 /* WebKit.framework */; };
+		ED2E047120874D6100F129C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2E047020874D6000F129C4 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ED2E045D20873A5700F129C4 /* ScreepsHistory.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScreepsHistory.saver; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED2E046020873A5800F129C4 /* ScreepsHistoryView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreepsHistoryView.h; sourceTree = "<group>"; };
-		ED2E046220873A5800F129C4 /* ScreepsHistoryView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreepsHistoryView.m; sourceTree = "<group>"; };
 		ED2E046420873A5800F129C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED2E046A2087470400F129C4 /* ScreepsHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreepsHistoryView.swift; sourceTree = "<group>"; };
+		ED2E046D208748DF00F129C4 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		ED2E047020874D6000F129C4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -23,6 +25,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED2E047120874D6100F129C4 /* Foundation.framework in Frameworks */,
+				ED2E046E208748DF00F129C4 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -34,6 +38,7 @@
 			children = (
 				ED2E045F20873A5800F129C4 /* ScreepsHistory */,
 				ED2E045E20873A5700F129C4 /* Products */,
+				ED2E046C208748DF00F129C4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -48,11 +53,19 @@
 		ED2E045F20873A5800F129C4 /* ScreepsHistory */ = {
 			isa = PBXGroup;
 			children = (
-				ED2E046020873A5800F129C4 /* ScreepsHistoryView.h */,
-				ED2E046220873A5800F129C4 /* ScreepsHistoryView.m */,
+				ED2E046A2087470400F129C4 /* ScreepsHistoryView.swift */,
 				ED2E046420873A5800F129C4 /* Info.plist */,
 			);
 			path = ScreepsHistory;
+			sourceTree = "<group>";
+		};
+		ED2E046C208748DF00F129C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED2E047020874D6000F129C4 /* Foundation.framework */,
+				ED2E046D208748DF00F129C4 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -62,7 +75,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED2E046120873A5800F129C4 /* ScreepsHistoryView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +89,7 @@
 				ED2E045920873A5700F129C4 /* Frameworks */,
 				ED2E045A20873A5700F129C4 /* Headers */,
 				ED2E045B20873A5700F129C4 /* Resources */,
+				ED2E046F208749EA00F129C4 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -98,6 +111,7 @@
 				TargetAttributes = {
 					ED2E045C20873A5700F129C4 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -129,12 +143,28 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		ED2E046F208749EA00F129C4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "open -W \"${CODESIGNING_FOLDER_PATH}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ED2E045820873A5700F129C4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED2E046320873A5800F129C4 /* ScreepsHistoryView.m in Sources */,
+				ED2E046B2087470400F129C4 /* ScreepsHistoryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,12 +277,17 @@
 		ED2E046820873A5800F129C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = ScreepsHistory/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mitsuyoshi.ScreepsHistory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Debug;
@@ -260,12 +295,16 @@
 		ED2E046920873A5800F129C4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = ScreepsHistory/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mitsuyoshi.ScreepsHistory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Release;
