@@ -10,6 +10,11 @@
 		ED2E046B2087470400F129C4 /* ScreepsHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2E046A2087470400F129C4 /* ScreepsHistoryView.swift */; };
 		ED2E046E208748DF00F129C4 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2E046D208748DF00F129C4 /* WebKit.framework */; };
 		ED2E047120874D6100F129C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2E047020874D6000F129C4 /* Foundation.framework */; };
+		ED652D802092C9440068C235 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED652D7F2092C9440068C235 /* AppDelegate.swift */; };
+		ED652D822092C9440068C235 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED652D812092C9440068C235 /* ViewController.swift */; };
+		ED652D852092C9440068C235 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED652D832092C9440068C235 /* Main.storyboard */; };
+		ED652D872092C9440068C235 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED652D862092C9440068C235 /* Assets.xcassets */; };
+		ED652D8A2092C9440068C235 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED652D882092C9440068C235 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +23,13 @@
 		ED2E046A2087470400F129C4 /* ScreepsHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreepsHistoryView.swift; sourceTree = "<group>"; };
 		ED2E046D208748DF00F129C4 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		ED2E047020874D6000F129C4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		ED652D7D2092C9440068C235 /* ScreepsHistoryIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreepsHistoryIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED652D7F2092C9440068C235 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ED652D812092C9440068C235 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ED652D842092C9440068C235 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ED652D862092C9440068C235 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED652D892092C9440068C235 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ED652D8B2092C9440068C235 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +42,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ED652D7A2092C9440068C235 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -37,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				ED2E045F20873A5800F129C4 /* ScreepsHistory */,
+				ED652D7E2092C9440068C235 /* ScreepsHistoryIOS */,
 				ED2E045E20873A5700F129C4 /* Products */,
 				ED2E046C208748DF00F129C4 /* Frameworks */,
 			);
@@ -46,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				ED2E045D20873A5700F129C4 /* ScreepsHistory.saver */,
+				ED652D7D2092C9440068C235 /* ScreepsHistoryIOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -66,6 +87,19 @@
 				ED2E046D208748DF00F129C4 /* WebKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED652D7E2092C9440068C235 /* ScreepsHistoryIOS */ = {
+			isa = PBXGroup;
+			children = (
+				ED652D7F2092C9440068C235 /* AppDelegate.swift */,
+				ED652D812092C9440068C235 /* ViewController.swift */,
+				ED652D832092C9440068C235 /* Main.storyboard */,
+				ED652D862092C9440068C235 /* Assets.xcassets */,
+				ED652D882092C9440068C235 /* LaunchScreen.storyboard */,
+				ED652D8B2092C9440068C235 /* Info.plist */,
+			);
+			path = ScreepsHistoryIOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -100,18 +134,40 @@
 			productReference = ED2E045D20873A5700F129C4 /* ScreepsHistory.saver */;
 			productType = "com.apple.product-type.bundle";
 		};
+		ED652D7C2092C9440068C235 /* ScreepsHistoryIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED652D8E2092C9440068C235 /* Build configuration list for PBXNativeTarget "ScreepsHistoryIOS" */;
+			buildPhases = (
+				ED652D792092C9440068C235 /* Sources */,
+				ED652D7A2092C9440068C235 /* Frameworks */,
+				ED652D7B2092C9440068C235 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScreepsHistoryIOS;
+			productName = ScreepsHistoryIOS;
+			productReference = ED652D7D2092C9440068C235 /* ScreepsHistoryIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		ED2E045420873A5700F129C4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = Mitsuyoshi;
 				TargetAttributes = {
 					ED2E045C20873A5700F129C4 = {
 						CreatedOnToolsVersion = 9.2;
 						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+					ED652D7C2092C9440068C235 = {
+						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -122,6 +178,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = ED2E045320873A5700F129C4;
 			productRefGroup = ED2E045E20873A5700F129C4 /* Products */;
@@ -129,6 +186,7 @@
 			projectRoot = "";
 			targets = (
 				ED2E045C20873A5700F129C4 /* ScreepsHistory */,
+				ED652D7C2092C9440068C235 /* ScreepsHistoryIOS */,
 			);
 		};
 /* End PBXProject section */
@@ -138,6 +196,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED652D7B2092C9440068C235 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED652D8A2092C9440068C235 /* LaunchScreen.storyboard in Resources */,
+				ED652D872092C9440068C235 /* Assets.xcassets in Resources */,
+				ED652D852092C9440068C235 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,7 +236,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ED652D792092C9440068C235 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED652D822092C9440068C235 /* ViewController.swift in Sources */,
+				ED652D802092C9440068C235 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ED652D832092C9440068C235 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED652D842092C9440068C235 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ED652D882092C9440068C235 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED652D892092C9440068C235 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		ED2E046520873A5800F129C4 /* Debug */ = {
@@ -309,6 +405,44 @@
 			};
 			name = Release;
 		};
+		ED652D8C2092C9440068C235 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ScreepsHistoryIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mitsuyoshi.ScreepsHistoryIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED652D8D2092C9440068C235 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ScreepsHistoryIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mitsuyoshi.ScreepsHistoryIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -326,6 +460,15 @@
 			buildConfigurations = (
 				ED2E046820873A5800F129C4 /* Debug */,
 				ED2E046920873A5800F129C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED652D8E2092C9440068C235 /* Build configuration list for PBXNativeTarget "ScreepsHistoryIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED652D8C2092C9440068C235 /* Debug */,
+				ED652D8D2092C9440068C235 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
